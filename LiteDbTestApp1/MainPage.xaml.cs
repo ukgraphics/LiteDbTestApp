@@ -38,7 +38,7 @@ namespace LiteDbTestApp
             using (var db = new LiteDatabase(dbstring))
             {
                 // Get datamodel collection
-                var datas = db.GetCollection<DataModel>("presondata");
+                var datas = db.GetCollection<DataModel>("persondata");
 
                 // Create new DataModel instance
                 var data = new ObservableCollection<DataModel>()
@@ -62,7 +62,7 @@ namespace LiteDbTestApp
             using (var db = new LiteDatabase(dbstring))
             {
                 // Get datamodel collection
-                var datas = db.GetCollection<DataModel>("presondata");
+                var datas = db.GetCollection<DataModel>("persondata");
 
                 // Read
                 var datasource = datas.FindAll().ToList();
